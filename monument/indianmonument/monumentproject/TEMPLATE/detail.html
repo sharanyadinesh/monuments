@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+           <img src="{{Result.image.url}}" width="100" height="100">
+        </div>
+        <div class="col-md-6">
+            <h3>{{Result.name}}</h3>
+            <h5>{{Result.about}}</h5>
+            <h5>{{Result.year}}</h5>
+<!--            <a class="btn btn-warning" href="{% url 'monumentapp:update' Result.id %}">UPDATE </a> <br>-->
+<!--            <a class="btn btn-danger" href="{% url 'monumentapp:delete' Result.id %}"> DELETE </a>-->
+        </div>
+    </div>
+</div>
+{% endblock %}

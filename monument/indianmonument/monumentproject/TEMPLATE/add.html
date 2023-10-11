@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADD</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+  <input type="text" name="name" placeholder="Enter the name"><br>
+  <input type="text" name="about" placeholder="Enter about the monument"><br>
+  <input type="number" name="year" placeholder="Enter the year"><br>
+    <input type="file" name="image"><br>
+    <input type="submit">
+</form>
+{% endblock %}
+</body>
+</html>
